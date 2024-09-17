@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -5,36 +6,51 @@
     font-family: Arial, sans-serif;
 }
 
+/* Estilo geral do body */
 html, body {
     height: 100%;
-    background-color: #bbffb9; /* Fundo levemente verde */
-}
-
-.container {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto padrão */
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100%;
+    align-items: center;
     padding: 20px;
 }
 
-.inputNome, .telCelular, .inputDate, .inputCEP, .inputCidade {
-    margin-bottom: 15px;
+/* Container principal */
+.container {
+    background-color: #f0f0f0; /* Fundo cinza claro para contraste */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
 }
 
-.inputUF, .inputBairro, .inputLog, .inputNumero {
-    margin-bottom: 15px;
+/* Título da página de cadastro */
+.cadastroTitle {
+    font-size: 2rem;
+    color: #2e7d32; /* Verde escuro */
+    margin-bottom: 20px;
 }
 
+/* Estilo dos campos de input */
 input[type="text"], input[type="datetime"], input[type="tel"], input[type="number"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #2e7d32; /* Borda verde */
     border-radius: 5px;
     font-size: 1rem;
+    outline: none;
 }
 
+input[type="text"]:focus, input[type="datetime"]:focus, input[type="tel"]:focus, input[type="number"]:focus {
+    border-color: #1b5e20; /* Borda verde mais escura ao focar */
+}
+
+/* Seções de formulário */
 .formEndereco, .formPessoal {
     background-color: #ffffff;
     padding: 20px;
@@ -42,60 +58,38 @@ input[type="text"], input[type="datetime"], input[type="tel"], input[type="numbe
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
-}
-
-.cadastroTitle {
-    font-size: 2.5rem;
-    color: #006400; /* Verde escuro */
-    text-align: center;
     margin-bottom: 20px;
 }
 
-.buttonSubmit {
-    width: 100%;
-    padding: 10px;
-    background-color: #006400; /* Verde escuro */
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-}
-
-.buttonSubmit:hover {
-    background-color: #004d00; /* Verde claro */
-}
-
+/* Texto de descrição dos dados */
 .textDados {
     font-size: 1.2rem;
-    color: #333;
+    color: #555555;
     margin-bottom: 15px;
     display: block;
     text-align: center;
 }
 
-.concluirCad {
-    text-align: center;
+/* Botão de envio */
+.buttonSubmit {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #2e7d32; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     margin-top: 20px;
 }
 
-.buttonSubmit {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: #fff;
-    background-color: #006400;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: none; /* Remove qualquer borda padrão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+.buttonSubmit:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
 }
 
-.buttonSubmit :hover {
-    background-color: #004d00; /* Verde mais escuro */
+/* Seção de conclusão do cadastro */
+.concluirCad {
+    text-align: center;
+    margin-top: 20px;
 }
