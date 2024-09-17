@@ -1,0 +1,18 @@
+{
+  "name": "tinderpalmeirense",
+  "version": "1.0.0",
+  "description": "projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tassaeleven"
+  },
+  "keywords": [
+    "chave"
+  ],
+  "author": "gabriel tassa",
+  "license": "ISC"
+}

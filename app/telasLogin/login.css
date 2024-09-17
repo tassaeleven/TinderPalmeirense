@@ -1,0 +1,161 @@
+/* reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #bbffb9; /* Fundo levemente verde */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.titleApp {
+    font-size: 2.5rem;
+    color: #006400; /* Verde escuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forms {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.textLogin {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.inputEmail, .inputPassword {
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttonIn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.botaoEntrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #006400; /* Verde escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botaoEntrar:hover {
+    background-color: #004d00; /* Verde mais escuro */
+}
+
+.alternative-logins {
+    text-align: center;
+}
+
+.otherLogins {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.buttonInstagram {
+    background-color: #C13584;
+    width: 100%;
+    height: auto;
+}
+
+.buttonInstagram:hover {
+    background-color: #8e285a;
+}
+
+.buttonTwitter {
+    background-color: #1DA1F2;
+    width: 100%;
+    height: auto;
+}
+
+.buttonTwitter:hover {
+    background-color: #1a91da;
+}
+
+.buttonGmail {
+    background-color: #DB4437;
+    width: 100%;
+    height: auto;
+}
+
+.buttonGmail:hover {
+    background-color: #c23321;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#registerButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #006400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove qualquer borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+#registerButton:hover {
+    background-color: #004d00; /* Verde mais escuro */
+}
+
+.register p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
