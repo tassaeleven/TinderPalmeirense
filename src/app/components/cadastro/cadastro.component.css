@@ -36,7 +36,7 @@ html, body {
 }
 
 /* Estilo dos campos de input */
-input[type="text"], input[type="datetime"], input[type="tel"], input[type="number"] {
+input[type="text"], input[type="datetime"], input[type="number"] {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -46,12 +46,12 @@ input[type="text"], input[type="datetime"], input[type="tel"], input[type="numbe
     outline: none;
 }
 
-input[type="text"]:focus, input[type="datetime"]:focus, input[type="tel"]:focus, input[type="number"]:focus {
+input[type="text"]:focus, input[type="datetime"]:focus, input[type="number"]:focus {
     border-color: #1b5e20; /* Borda verde mais escura ao focar */
 }
 
 /* Seções de formulário */
-.formEndereco, .formPessoal {
+.formPessoal {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -59,6 +59,7 @@ input[type="text"]:focus, input[type="datetime"]:focus, input[type="tel"]:focus,
     max-width: 400px;
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* Texto de descrição dos dados */

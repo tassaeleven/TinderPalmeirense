@@ -10,7 +10,7 @@
     <div class="container">
         <h1 class="cadastroTitle">Cadastre-se</h1>
         <section>
-            <form class="formEndereco" id="cadastro">
+            <form class="formPessoal" id="cadastro">
                 <span class="textDados">Preencha seus dados:</span>
                 <div class="nomeCompleto">
                     <input class="inputNome"
@@ -41,50 +41,14 @@
                         });
                     </script>
                 </div>
-                <div>
-                    <input class="inputCEP"
-                    type="tel"
-                    aria-label="CEP"
-                    placeholder="Digite seu CEP">
-                </div>
-                <div>
-                    <input class="inputCidade"
-                    type="text"
-                    aria-label="cidade"
-                    placeholder="Cidade">
-                </div>
-                <div>
-                    <input class="inputUF"
-                    type="text"
-                    aria-label="UF do endereço"
-                    placeholder="UF">
-                </div>
-                <div>
-                    <input class="inputBairro"
-                    type="text"
-                    aria-label="bairro"
-                    placeholder="Bairro">
-                </div>
-                <div>
-                    <input class="inputLog"
-                    type="text"
-                    aria-label="Logradouro"
-                    placeholder="Logradouro">
-                </div>
-                <div>
-                    <input class="inputNumero"
-                    type="number"
-                    aria-label="número da casa"
-                    placeholder="Número">
-                </div>
             </form>
             <section class="concluirCad">
-                <a 
-                class="buttonSubmit" 
-                id="submit"
-                href="confirmacao.html">
-                    Concluir cadastro
-                </a>
+                <button
+                    class="buttonSubmit" 
+                    id="submit"
+                    (click)="goTo()">
+                        Concluir cadastro
+                </button>
             </section>
         </section>
     </div>
