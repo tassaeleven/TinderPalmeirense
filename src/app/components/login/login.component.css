@@ -17,8 +17,50 @@ html, body {
     padding: 20px;
 }
 
+.container1 {
+    margin-right: 150px;
+}
+
+.welcome1 {
+    margin-bottom: 20px;
+}
+
+.textWelcome1 {
+    font-size: 2.5rem; /* Tamanho grande para o título */
+    font-weight: bold;
+    color: #2e7d32; /* Cor do texto */
+    margin: 0;
+}
+
+/* Estilos para o subtítulo */
+.welcome2 {
+    margin-top: 10px;
+}
+
+.textWelcome2 {
+    font-size: 1.5rem; /* Tamanho menor para o subtítulo */
+    font-weight: 300;
+    color: #666; /* Cor mais clara para o subtítulo */
+    margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .textWelcome1 {
+        font-size: 2rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .textWelcome2 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+
+    .container1 {
+        padding: 30px 15px; /* Ajusta o espaçamento em telas menores */
+    }
+}
+
 /* Container principal */
-.container {
+.container2 {
     background-color: #f0f0f0; /* Fundo cinza claro para contraste */
     border-radius: 10px;
     padding: 40px;
@@ -37,6 +79,7 @@ html, body {
 
 .textLogin {
     font-size: 1.0rem;
+    color: #666;
 }
 
 /* Estilo dos campos de input */
@@ -81,7 +124,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .otherLogins {
     font-size: 1.1rem;
-    color: #555555;
+    color: #666;
     margin-bottom: 10px;
 }
 
