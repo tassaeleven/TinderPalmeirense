@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { ConfirmacaoComponent } from './components/confirmacao/confirmacao.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CadastroComponent,
-    ConfirmacaoComponent
+    ConfirmacaoComponent,
   ],
   imports: [
     BrowserModule,
+    HomeComponent,
     AppRoutingModule
   ],
   providers: [],
