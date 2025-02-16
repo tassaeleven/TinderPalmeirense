@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="cadastro.component.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="cadastroTitle">Cadastre-se</h1>
+        <section>
+            <form class="formPessoal" id="cadastro">
+                <span class="textDados">Preencha seus dados:</span>
+                <div class="nomeCompleto" required>
+                    <input class="inputNome"
+                    type="text"
+                    id="nome"
+                    for="nome"
+                    aria-label="Nome Completo"
+                    placeholder="Nome Completo"
+                    (blur)="nameValidate()">
+                </div>
+                <div class="telCelular" required>
+                    <input class="inputTel"
+                    type="number"
+                    id="celular"
+                    aria-label="Telefone celular"
+                    placeholder="Celular"
+                    (blur)="phoneValidate()">
+                </div>
+                <div class="dataNascimento" required>
+                    <input class="inputDate"
+                    type="text"
+                    id="nascimento"
+                    for="nascimento"
+                    aria-label="Data de Nascimento"
+                    placeholder="Data de Nascimento"
+                    (blur)="dateValidate()">
+                </div>
+            </form>
+            <section class="concluirCad">
+                <button
+                    class="buttonSubmit" 
+                    id="submit"
+                    (click)="goTo()">
+                        Concluir cadastro
+                </button>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

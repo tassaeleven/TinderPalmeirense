@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do body */
+html, body {
+    height: 100%;
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    background-color: #f0f0f0; /* Fundo cinza claro para contraste */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Título da página de cadastro */
+.cadastroTitle {
+    font-size: 2rem;
+    color: #2e7d32; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input */
+input[type="text"], input[type="datetime"], input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #2e7d32; /* Borda verde */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="datetime"]:focus, input[type="number"]:focus {
+    border-color: #1b5e20; /* Borda verde mais escura ao focar */
+}
+
+/* Seções de formulário */
+.formPessoal {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Texto de descrição dos dados */
+.textDados {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Botão de envio */
+.buttonSubmit {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #2e7d32; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.buttonSubmit:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Seção de conclusão do cadastro */
+.concluirCad {
+    text-align: center;
+    margin-top: 20px;
+}

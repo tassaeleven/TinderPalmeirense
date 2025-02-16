@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder S.E.P</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <section class="container1">
+        <div class="welcome1">
+            <h1 class="textWelcome1">Bem vindo à Burguer S.E.P</h1>
+        </div>
+        <div class="welcome2">
+            <h2 class="textWelcome2">Aqui iremos te oferecer o melhor da gastronômia suína no hamburguer.</h2>            
+        </div>
+    </section>
+    <section>
+        <div class="container2">
+            <h1 class="titleApp">Burguer Palmeirense</h1>
+            <form class="forms" id="loginForm">
+                <span class="textLogin">Faça seu login:</span>
+                <div class="inputEmail">
+                    <input 
+                    type="email" 
+                    id="email"
+                    placeholder="E-mail" required>
+                </div>
+                <div class="inputPassword">
+                    <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Senha" required>
+                </div>
+                <div class="buttonIn">
+                    <button 
+                        type="submit"
+                        class="botaoEntrar">Entrar</button>
+                </div>
+            </form>
+            <div class="alternative-logins">
+                <h2 class="otherLogins">Outras formas de fazer login:</h2>
+                <button class="buttonInstagram" id="loginInstagram">
+                    <img 
+                        src="/assets/instagram.png" 
+                        alt="logotipo do app Instagram">
+                </button>
+                <button class="buttonTwitter" id="loginTwitter">
+                    <img 
+                        src="/assets/twitter.png" 
+                        alt="logotipo do app Twitter">
+                </button>
+                <button class="buttonGmail" id="loginGmail">
+                    <img 
+                        src="/assets/gmail.png" 
+                        alt="logotipo do app Gmail">
+                </button>
+            </div> 
+            <section class="register">
+                <p>AOA! Não tem cadastro?</p>
+                <button
+                (click)="goToRegister()"
+                type="button"
+                class="buttonRegister"
+                id="registerButton"
+                b>Cadastre-se já!</button>
+            </section>
+        </div>
+    </section>
+</body>
+</html>

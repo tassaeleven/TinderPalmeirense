@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do body */
+body {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container1 {
+    background-color: #f0f0f0; /* Fundo cinza claro para contraste */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Títulos */
+.titulo1 {
+    font-size: 2rem;
+    color: #2e7d32; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+.titulo2 {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+button {
+    background-color: #2e7d32; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+}
+
+.buttonEmail, .buttonSMS {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Seção de confirmação */
+.hidden {
+    display: none;
+}
+
+.hidden1 {
+    display: none;
+}
+
+#section2 {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+#section3 {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.titulo1sub {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.titulo2sub {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Input de código */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #2e7d32; /* Borda verde */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #1b5e20; /* Borda verde mais escura ao focar */
+}
+
+/* Botão de confirmação */
+.buttonConfirm {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonConfirm:hover {
+    background-color: #1b5e20;
+}
+
+.buttonGoBack {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonGoBack:hover {
+    background-color: #1b5e20;
+}

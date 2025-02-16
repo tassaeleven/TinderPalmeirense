@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ative sua conta</title>
+    <link rel="stylesheet" href="confirmacao.component.css" />
+  </head>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <section class="container1" id="section1">
+      <div>
+        <h1 class="titulo1">Uhu! Estamos quase lá. 🎉</h1>
+        <h2 class="titulo2">
+          Para ativarmos sua conta, selecione a opção que você deseja receber um
+          código de acesso:
+        </h2>
+      </div>
+      <button class="buttonEmail" (click)="sendCode('email')">
+        Receber por email
+      </button>
+      <button class="buttonSMS" (click)="sendCode('celular')">
+        Receber por SMS
+      </button>
+    </section>
+    <section class="hidden" id="section2">
+      <div>
+        <h1 class="titulo1sub">
+          Enviamos um código para seu <span id="method">{{ method }}</span> para
+          confirmar sua identidade. Insira-o abaixo:
+        </h1>
+        <input type="text" id="code" placeholder="Código de acesso" required />
+        <button class="buttonConfirm" (click)="confirmCode()">Confirmar</button>
+      </div>
+    </section>
+    <section class="hidden1" id="section3">
+      <div>
+        <h1 class="titulo2sub">
+          Perfeito! Agora você pode voltar para o login e desfrutar momentos
+          maravilhosos
+        </h1>
+        <button class="buttonGoBack" (click)="goBack()">
+          Voltar para o login
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

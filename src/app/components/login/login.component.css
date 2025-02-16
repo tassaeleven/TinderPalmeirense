@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do body */
+html, body {
+    height: 100%;
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container1 {
+    margin-right: 150px;
+}
+
+.welcome1 {
+    margin-bottom: 20px;
+}
+
+.textWelcome1 {
+    font-size: 2.5rem; /* Tamanho grande para o título */
+    font-weight: bold;
+    color: #2e7d32; /* Cor do texto */
+    margin: 0;
+}
+
+/* Estilos para o subtítulo */
+.welcome2 {
+    margin-top: 10px;
+}
+
+.textWelcome2 {
+    font-size: 1.5rem; /* Tamanho menor para o subtítulo */
+    font-weight: 300;
+    color: #666; /* Cor mais clara para o subtítulo */
+    margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .textWelcome1 {
+        font-size: 2rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .textWelcome2 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+
+    .container1 {
+        padding: 30px 15px; /* Ajusta o espaçamento em telas menores */
+    }
+}
+
+/* Container principal */
+.container2 {
+    background-color: #f0f0f0; /* Fundo cinza claro para contraste */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Título da página de login */
+.titleApp {
+    font-size: 2rem;
+    color: #2e7d32; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+.textLogin {
+    font-size: 1.0rem;
+    color: #666;
+}
+
+/* Estilo dos campos de input */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid #2e7d32; /* Borda verde */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #1b5e20; /* Borda verde mais escura ao focar */
+}
+
+/* Botão de login */
+.botaoEntrar {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #2e7d32; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.botaoEntrar:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Seção de logins alternativos */
+.alternative-logins {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.otherLogins {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Botões de login alternativo */
+button img {
+    width: 30px; /* Define o tamanho da imagem */
+    height: 30px; /* Define o tamanho da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem dentro do botão */
+}
+
+/* Ajuste dos botões para remover o texto e manter apenas a imagem */
+button {
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    padding: 0; /* Remove o padding interno */
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%; /* Deixa o botão redondo */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonInstagram {
+    background-color: #C13584;
+}
+
+.buttonInstagram:hover {
+    background-color: #8e285a;
+}
+
+.buttonTwitter {
+    background-color: #1DA1F2;
+}
+
+.buttonTwitter:hover {
+    background-color: #1a91da;
+}
+
+.buttonGmail {
+    background-color: #DB4437;
+}
+
+.buttonGmail:hover {
+    background-color: #c23321;
+}
+
+/* Seção de registro */
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#registerButton {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #2e7d32; /* Verde escuro */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#registerButton:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+}
+
+.register p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555555;
+}
